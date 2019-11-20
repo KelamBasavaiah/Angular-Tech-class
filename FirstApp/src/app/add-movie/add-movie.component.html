@@ -1,0 +1,40 @@
+<form [formGroup]="myForm" (ngSubmit)="createMovie()">
+    <div>
+            <label class="form-control">Movie ID</label> 
+            <input class="form-control" 
+            type="text" 
+           formControlName="movieId"
+            />
+            <br>
+            <span *ngIf="movieId.errors && movieId.touched" >
+                    <span *ngIf="movieId.errors.required">Id can't be empty</span>
+                    <span *ngIf="movieId.errors.Lenerror"> Invalid Id</span>
+                    <!-- <span *ngIf="movieId.errors.pattern"> Invalid Id</span> -->
+                </span>
+            <br><br>
+            <button class="btn btn-success">Add Movie</button>
+            <button class="btn btn-danger">Reset</button>
+
+        <!-- <label class="form-control">Movie ID</label> 
+        <input class="form-control" type="text" [(ngModel)]="movie.id"/>
+        <br>
+        <label class="form-control">Movie Name</label>
+        <input class="form-control" type="text"  [(ngModel)]="movie.name"/>
+        <br>
+        <label class="form-control">Movie Duration</label>
+        <input class="form-control" type="text"  [(ngModel)]="movie.duration"/>
+        <br>
+        <label class="form-control">Movie Rating</label>
+        <input class="form-control" type="text"  [(ngModel)]="movie.starRating"/>
+        <br>
+        <label class="form-control">Movie Poster</label>
+        <input class="form-control" type="text"  [(ngModel)]="movie.poster"/>
+        <br>
+        <br>
+        <button class="btn btn-success"(click)="insertMovie()">Add Movie</button>
+        <button class="btn btn-danger"(click)="restMovie()">Reset</button> -->
+    </div>
+ </form>
+<div *ngIf="result" class="alert alert-info">
+    {{result}}
+</div>

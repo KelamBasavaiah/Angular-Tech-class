@@ -1,0 +1,8 @@
+<div id="amonut">
+    Total ammount Payable is {{totalAmount}}
+</div>
+<hr>
+<div *ngFor="let f of floras"  id="buy">
+        <app-flora [flora]="f"(buyClicked)="caluclateTotal($event)" ></app-flora>
+        <!-- <button  class="btn btn-success" (click)="buyClick()">Buy</button> -->
+   </div>

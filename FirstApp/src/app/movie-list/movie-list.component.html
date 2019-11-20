@@ -1,0 +1,9 @@
+<div *ngFor="let m of movies">
+<label>{{m.id}}</label>
+<button (click)= "showMovieDetalis(m.id)">Show Detalis</button>
+
+</div>
+<br>
+<div>
+    <router-outlet></router-outlet>
+</div>

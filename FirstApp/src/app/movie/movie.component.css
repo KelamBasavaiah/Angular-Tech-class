@@ -1,0 +1,13 @@
+img{
+    height:80px;
+    widows: 80px;
+}
+div{
+    background-color: burlywood;
+
+    border: black 1px solid ;
+    width: 15%;
+    float: left;
+    position: relative;
+ 
+}

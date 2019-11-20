@@ -1,0 +1,29 @@
+<!-- <p>
+    Empolyee name:{{name}}
+    <br>
+    <input type="text" [value]="name"
+     #txtName (change)="changeName(txtName)"/>
+     <br>
+     <br>
+     <input type="text" [(ngModel)]="name"/>
+     <br><br>
+     <input type="password"[(ngModel)]="number">
+     Empolyee number :{{number}}
+     <br>
+     <button class="alert alert-success">click for nothing</button>
+     <br>
+     <span [class]="className" (click)="changeState()"></span>
+     <br>
+     count is :{{count}}
+</p> -->
+
+<div>
+    id:{{employee.id}}
+    <br>
+    name:{{employee.name}}
+    <br>
+    age:{{employee.age}}
+    <br>
+    Employee fav:<span [class]="favClass" (click)="changeState()"></span>
+    <br>
+</div>

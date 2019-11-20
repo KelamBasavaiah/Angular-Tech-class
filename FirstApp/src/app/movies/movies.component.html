@@ -1,0 +1,8 @@
+<div>
+TotalLikes:{{totalLikes}}
+</div>
+
+<div *ngFor="let m of movies">
+   <app-movie [movie]="m" (likeCicked)="handleLike()"></app-movie>
+
+</div>

@@ -1,0 +1,87 @@
+<!-- <div>
+    <h3>Kb</h3>
+    <div>bhai</div>
+    <app-employee></app-employee>
+    <br>
+</div>
+
+<div>
+    <br>
+    <app-student></app-student>
+</div>
+
+<div>
+    <br>
+    <app-movie></app-movie>
+</div> -->
+<!-- <div>
+    <br>
+    <app-movies></app-movies>
+</div>
+<div>
+        <app-add-movie></app-add-movie>
+</div> -->
+<!-- <div>
+    <app-books></app-books>
+</div>
+<div>
+        <app-add-book></app-add-book>
+</div> -->
+<!-- <div [ngSwitch]="userChoice">
+        <ul class="nav nav-tab">
+                <li (click)="userChoice='movie'"><a href="#">Movies</a></li>
+                <li (click)="userChoice='book'"><a href="#">Books </a></li>
+                <li (click)="userChoice='add-book'"><a href="#">add Book</a></li>
+                <li (click)="userChoice='add-movie'"><a href="#">add Movie</a></li>
+        </ul>
+            <div *ngSwitchCase="'book'">
+                <app-books></app-books>
+            </div>
+            <div *ngSwitchCase="'movie'">
+                
+                    <app-movies></app-movies>
+            </div>
+            <div *ngSwitchCase="'add-book'">
+                    <app-add-book></app-add-book>
+            </div>
+            <div *ngSwitchCase="'add-movie'">
+                    <app-add-movie></app-add-movie>
+            </div>
+            
+</div>  -->
+<!-- <div [ngSwitch]="userChoice">
+        <ul class="nav nav-tab">
+                <li (click)="userChoice='flowerList'"><a href="#">Flower list</a></li>
+                <li (click)="userChoice='buy-flora'"><a href="#">Buy Flower</a></li>
+                <li (click)="userChoice='book'"><a href="#">Orders </a></li> 
+                
+        </ul>
+            
+            <div *ngSwitchCase="'flowerList'">
+                
+                    <app-floras></app-floras>
+            </div>
+            <div *ngSwitchCase="'buy-flora'">
+                    <app-buy-flora></app-buy-flora>
+            </div>
+            
+            <div *ngSwitchCase="'book'">
+                    <app-orders></app-orders>
+                </div>
+            
+</div>  -->
+
+
+<div >
+        <ul class="nav nav-tab">
+                <li ><a routerLink="movies">Movies</a></li>
+                <li ><a routerLink="books">Books </a></li>
+                <li ><a routerLink="addBook">add Book</a></li>
+                <li ><a routerLink="addMovie">add Movie</a></li>
+                <li ><a routerLink="listMovies">List movies</a></li>
+                <li ><a routerLink="user">User</a></li>
+        </ul>      
+</div> 
+<div>
+        <router-outlet></router-outlet>
+</div>  

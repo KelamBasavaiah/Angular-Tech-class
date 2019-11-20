@@ -1,0 +1,11 @@
+img{
+    height:80px;
+    widows: 80px;
+}
+p{
+    background-color: burlywood;
+    width: 50%;
+    border: black 1px solid ;
+    float: left;
+    position: relative;
+}

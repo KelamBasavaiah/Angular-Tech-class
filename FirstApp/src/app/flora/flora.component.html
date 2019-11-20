@@ -1,0 +1,17 @@
+<div *ngIf="flora.qty>0">
+    <br>
+    <br>
+    <img [src]="flora.poster">
+    <br>
+    <br>
+    <label>Flower Name  :</label>
+    <label>{{flora.name}}</label>
+    <br>
+    <label>Flower price :</label>
+    <label>{{flora.price}}</label>
+    <br>
+    <label>Flower Qty   :</label>
+    <label>{{flora.qty}}</label>
+    <br>
+     <button class="btn btn-success" (click)="userClick()" >Buy</button> 
+</div>

@@ -1,0 +1,20 @@
+<div>
+    <label>Movie ID</label>
+    <label> {{movie.id}}</label>
+    <br>
+    <label>Movie name</label>
+    <label> {{movie.name}}</label>
+    <br>
+    <label>Movie duration</label>
+    <label> {{movie.duration}}</label>
+    <br>
+    <label>Movie Rating</label>
+    <label> {{movie.starRating}}</label>
+    <br>
+    <label>Movie POster</label><br><br>
+    <img [src]="movie.poster" alt="">
+    <br>
+    <br>
+    <button class="btn btn-success" (click)="userClick()">like</button>
+    <br><br>
+</div>

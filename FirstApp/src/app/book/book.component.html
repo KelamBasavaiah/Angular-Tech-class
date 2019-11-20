@@ -1,0 +1,21 @@
+<p *ngIf="book.starRating>0"> 
+   <!-- <p [hidden]="book.starRating<=0"> -->
+        <label>Book ID</label>
+        <label> {{book.id}}</label>
+        <br>
+        <label>Book name</label>
+        <label> {{book.name}}</label>
+        <br>
+        <label>Book pages</label>
+        <label> {{book.pages}}</label>
+        <br>
+        <label>Book Rating</label>
+        <label> {{book.starRating}}</label>
+        <br>
+        <label>Book POster</label><br><br>
+        <img [src]="book.poster" alt="">
+        <br>
+        <br>
+        <button class="btn btn-success" (click)="userClick()">buy</button>
+        <br><br>
+   </p>
